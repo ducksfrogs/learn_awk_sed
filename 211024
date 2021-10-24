@@ -1,0 +1,350 @@
+: 1632061321:0;sudo apt upadte
+: 1632028999:0;git clone https://github.com/ducksfrogs/LinuxSettings.git
+: 1632029045:0;unzip LinuxSettings
+: 1632029053:0;unzip LinuxSettings-master.zip
+: 1632029058:0;cd LinuxSettings-master
+: 1632029067:0;./nvidia.sh
+: 1632037839:0;sudo apt install brasero
+: 1632037994:0;sudo apt autoclean
+: 1632041136:0;df
+: 1632822935:0;git 
+: 1632823083:0;zp zshrc210130 ~
+: 1632823089:0;cp zshrc210130 ~/
+: 1632823114:0;mv zshrc210130 ~/.zshrc
+: 1632823122:0;conda 
+: 1632823279:0;history -1000|grep nvi
+: 1632823299:0;cd Downloads/LinuxSettings
+: 1632823309:0;less nvidia.sh
+: 1632823461:0;less .tmux.conf
+: 1632823507:0;sudo ubuntu-drivers autoinstall
+: 1632823560:0;ubuntu-drivers devices
+: 1632823595:0;sudo apt install nvidia-driver-470
+: 1632824123:0;mkdir .bin
+: 1632824216:0;chmod +x Anaconda3-2021.05-Linux-x86_64.sh
+: 1632824223:0;./Anaconda3-2021.05-Linux-x86_64.sh
+: 1632832384:0;h -f -100 |grep ssh
+: 1632832418:0;ssh-keygen -t rsa -b 4096 -C "ma_yamaki@yahoo.com"
+: 1632832434:0;eval "@
+: 1632832526:0;ssh-keygen -t ed25519 -C "ma_yamaki@yahoo.com"
+: 1632832539:0;eval "$(ssh-agent -s)"
+: 1632832567:0;ssh-add -K ~/.ssh/id_ed25519
+: 1632832711:0;cat ~/.ssh/id_ed25519.pub |xsel -bi
+: 1632832794:0;./mozc.sh
+: 1632833261:0;cp momo.sh vagrant.sh
+: 1632833290:0;pip install neovim
+: 1632833351:0;sudo apt install neovim
+: 1632833374:0;vi vagrant.sh
+: 1632833406:0;./vagrant.sh
+: 1632833431:0;cp -rf nvim ~/.config
+: 1632833437:0;./dein_f.sh
+: 1632833464:0;nvim
+: 1632833519:0;cd misc
+: 1632833545:0;find ~/ -name "git_co*"
+: 1632833558:0;./git_conf.sh
+: 1632833563:0;git commit -m "add vagrant "
+: 1632833642:0;cd ~/Documents
+: 1632833653:0;mkdir -p vm/centos
+: 1632833656:0;cd vm/centos
+: 1632833659:0;vagrant init
+: 1632833703:0;sudo dpkg -i virtualbox-6.1_6.1.26-145957\~Ubuntu\~eoan_amd64.deb
+: 1632833924:0;sudo reboot
+: 1632834010:0;sudo dpkg -r virtualbox-6.1
+: 1632834035:0;sudo apt install virtualbox
+: 1632863156:0;vi
+: 1632863193:0;mkdir py/django -p
+: 1632863196:0;cd py/django
+: 1632863392:0;git clone git@github.com:ducksfrogs/django_2.git
+: 1632863569:0;sudo dpkg -i atom-amd64.deb
+: 1632864606:0;sudo add-apt-repository multiverse
+: 1632864642:0;sudo apt install ubuntu-restricted-extras
+: 1632950312:0;cd editors
+: 1632950316:0;cat installer.sh
+: 1632950362:0;rm -rf installer.sh
+: 1632950369:0;cd ../ubuntu_settings
+: 1632950389:0;rm -rf .nvimlog
+: 1632950396:0;ls -la
+: 1632950415:0;rm -rf momo.sh
+: 1632950426:0;rm -rf neovim.sh
+: 1632950438:0;rm -r r4forcal.sh
+: 1632950454:0;git commit -m "remove some"
+: 1632950759:0;less postgres.sh
+: 1632950916:0;git commit -m "Postgres"
+: 1633001001:0;h -f -80|less
+: 1633001031:0;h	
+: 1633001039:0;h -f -80|less |grep sudo
+: 1633002081:0;ssh ma@masan-s.com
+: 1633004196:0;sudo shutdown -h now
+: 1633024944:0;mkdir awk_sed
+: 1633024946:0;cd awk_sed
+: 1633025018:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git
+: 1633025073:0;echo "# learn_awk and sed" > README.md
+: 1633025094:0;git commit -m "First commit "
+: 1633025116:0;git remote git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025134:0;git remote origin git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025151:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025173:0;mkdir awk
+: 1633025189:0;vi first.awk
+: 1633025210:0;touch test.txt
+: 1633025347:0;awk '{print $0}' test.txt
+: 1633025355:0;awk '{print $1}' test.txt
+: 1633025367:0;vi test.txt
+: 1633025406:0;vi num.txt
+: 1633025457:0;git commit -m "add mu"
+: 1633026515:0;cd awk
+: 1633026562:0;awk '{print $1*10}' num.txt
+: 1633026569:0;cat num.txt
+: 1633026654:0;cat /etc/shells
+: 1633026871:0;bash
+: 1633027377:0;touch hits_commands
+: 1633027401:0;cat ~/.zsh_history >> hits_commands
+: 1633027548:0;git commit -m "awk first"
+: 1633027584:0;cat ~/.zsh_history |grep awk >> hits_commands
+: 1633027587:0;vi hits_commands
+: 1633028804:0;sudo shutdown -h +1
+: 1633429899:0;sudo apt upgrade
+: 1633738115:0;python --version
+: 1633738137:0;conda create -n work python=3.8 
+: 1633739049:0;cd py
+: 1633739072:0;git clone git@github.com:ducksfrogs/s_test.git
+: 1633739099:0;git checkout start_flask
+: 1633739153:0;python -m django --version
+: 1633739165:0;pip install flask
+: 1633739625:0;cd ~/Downloads
+: 1633739635:0;sudo dpkg -i code_1.61.0-1633631387_amd64.deb
+: 1633739660:0;sudo apt -f install
+: 1633739737:0;vim
+: 1633741241:0;cd ~/Documents/py/s_test/flask/base
+: 1633741251:0;python tu_ai_ac.py
+: 1633753296:0;h -f -
+: 1633753305:0;h -f -1000|less
+: 1633774399:0;cd dk
+: 1633774605:0;cd Documents/py
+: 1633774609:0;cd s_test
+: 1633774632:0;git push origin start_flask
+: 1633774658:0;git merge start_flask
+: 1633774718:0;git checkout -b flask_2day
+: 1633774751:0;cd flask
+: 1633774756:0;cd 1st
+: 1633774849:0;mkdir first_db/models
+: 1633774858:0;mv database.py first_db/models
+: 1633774865:0;mv __init__.py first_db/models
+: 1633774872:0;mv models.py first_db/models
+: 1633774918:0;conda install sqlalchemy
+: 1633775907:0;python
+: 1633776266:0;cd ~/Documents/py/s_test/flask/1st/first_db
+: 1633777267:0;git commit -m "fin db\
+"
+: 1633777288:0;git push origin flask_2day
+: 1633777444:0;git merge flask_2day
+: 1633805551:0;h -f -19999|less
+: 1633816918:0;systemctl status postgresql
+: 1633817104:0;psql -Upostgres -p
+: 1633817116:0;psql -Upostgres 
+: 1633817174:0;sudo passwd postgres
+: 1633817200:0;h -1000|grep postgres
+: 1633817207:0;h -f -1000|grep postgres
+: 1633817220:0;sudo -u postgres -i
+: 1633817410:0;sudo su -
+: 1633817603:0;vi postgres.sh
+: 1633817635:0;./postgres.sh
+: 1633817783:0;sudo apt install pgadmin4
+: 1633817799:0;psql -Uposg
+: 1633817810:0;psql -Upostgres
+: 1633818635:0;sudo apt install xsel
+: 1633818644:0;vi .tmux.conf
+: 1633818795:0;vi first.sh
+: 1633818855:0;git commit -m "xsel"
+: 1633820346:0;sudo systemctl restart postgresql
+: 1633820717:0;cd Documents/
+: 1633820723:0;mkdir sql
+: 1633820728:0;mkdir misc
+: 1633820732:0;mv awk_sed misc
+: 1633820738:0;mv sql misc
+: 1633820767:0;echo "Start lesson SQL" >> README.md
+: 1633820795:0;echo "Start lesson SQL" > README.md
+: 1633820812:0;git init
+: 1633820818:0;git add README.md
+: 1633820830:0;git commit -m "first commit "
+: 1633820845:0;git branch -M main
+: 1633820852:0;git remote add origin git@github.com:ducksfrogs/lesson_sql.git
+: 1633820859:0;git push -u origin main
+: 1633822657:0;exit
+: 1633822662:0;psql -Utest -d test
+: 1633837838:0;psql -Upostgres -d test
+: 1633839801:0;sudo apt install libreoffice
+: 1633840323:0;cd Documents
+: 1633840330:0;vi deniro.csv
+: 1633840909:0;cat sqltest
+: 1633841541:0;vi sqltest
+: 1633841691:0;cat sqltest|xsel -bi
+: 1633843366:0;vi homes.csv
+: 1633843453:0;cat homes.csv|xsel -bi
+: 1633843933:0;vi Untitled\ 1.csv
+: 1633844091:0;cat Untitled\ 1.csv
+: 1633844106:0;cat Untitled\ 1.csv |xsel -bi
+: 1633845765:0;cd misc/sql
+: 1633845778:0;git commit -m "d'"
+: 1633847826:0;h -f -100|less
+: 1633848149:0;cd flask/1st/first_db
+: 1633848329:0;sqlite3
+: 1633848351:0;cd Documents/py/s_test/flask/1st/first_db
+: 1633848356:0;cd models
+: 1633848363:0;sqlite3 onegai.db
+: 1633849199:0;git checkout flask3day
+: 1633849207:0;git checkout -b flask3day
+: 1633849261:0;conda info -e
+: 1633849296:0;cd..
+: 1633849383:0;pip install psycopg2-binary
+: 1633849436:0;cd .bin/anaconda3/envs/work/include/python3.8
+: 1633850402:0;jupyter 
+: 1633850780:0;cd ~
+: 1633850792:0;cd Documents/py/s_test
+: 1633851423:0;conda install psycopg2-binary
+: 1633851493:0;nvm
+: 1633851504:0;cd LinuxSettings/ubuntu_settings
+: 1633851509:0;./nvm_rvm.sh
+: 1633851597:0;nvm install stable
+: 1633851642:0;node -v
+: 1633851652:0;nvm alias default stable
+: 1633851668:0;source activate work
+: 1633851857:0;conda create -n py39 python=3.9 anaconda
+: 1633852001:0;conda deactivate
+: 1633852187:0;source activate py39
+: 1633852203:0;h -100|grep psy
+: 1633852313:0;sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+: 1633852359:0;sudo apt install python-wheel-common
+: 1633852462:0;sudo apt-get install python-dev libpq-dev
+: 1633852551:0;pip install sqlalchemy
+: 1633854987:0;conda install psycopg2
+: 1633860399:0;pip install psycopg2
+: 1633860420:0;cd Documents/py/s_test/flask
+: 1633860426:0;cd 1st_pg
+: 1633864987:0;git status
+: 1633865002:0;git commit -m "madayaru"
+: 1633865259:0;cd flask/1st_pg
+: 1633865263:0;jupyter-lab
+: 1633866928:0;cd Documents/py/s_test/flask/1st_pg
+: 1633866929:0;;s
+: 1633866933:0;cd first_db
+: 1633866941:0;python run.py
+: 1633866994:0;git commit -m "day3"
+: 1633867013:0;git push origin flask3day
+: 1633867022:0;git checkout main
+: 1633867034:0;git merge flask3day
+: 1633867039:0;git push origin main
+: 1633879092:0;sudo shutdown -h +59
+: 1633900217:0;sudo dpkg -i google-chrome-stable_current_amd64.deb
+: 1634333959:0;sudo dpkg --add-architecture i386
+: 1634333988:0;wget -nc https://dl.winehq.org/wine-builds/winehq.key
+: 1634334001:0;sudo apt-key add winehq.key
+: 1634334053:0;cat /etc/os-release
+: 1634334071:0;sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
+: 1634334102:0;sudo apt update
+: 1634334153:0;sudo apt install --install-recommends winehq-stable
+: 1634334535:0;cd Downloads
+: 1634334549:0;wine CODESYS\ 64\ 3.5.17.10.exe
+: 1634334633:0;git branch
+: 1634334643:0;git remote -v
+: 1634334647:0;git pull
+: 1634334729:0;rm -rf LinuxSettings
+: 1634334975:0;git clone git@github.com:ducksfrogs/LinuxSettings.git
+: 1634334986:0;cd LinuxSettings
+: 1634334989:0;cd ubuntu_settings
+: 1634335008:0;cp nvidia.sh wine.sh
+: 1634335014:0;vi wine.sh
+: 1634335113:0;h |grep sudo
+: 1634335120:0;h -100|grep sudo
+: 1634335200:0;cd ..
+: 1634335277:0;git add .
+: 1634335281:0;git commit -m "d"
+: 1634335288:0;git push origin master
+: 1634451699:0;vagrant ssj
+: 1634451702:0;vagrant ssh
+: 1634454343:0;less Vagrantfile
+: 1634454359:0;vi Vagrantfile
+: 1634454403:0;vagrant reload
+: 1634639409:0;ls -la |grep .pos
+: 1634639450:0;cd .config
+: 1634639451:0;ls
+: 1634639552:0;cd ~/Documents/vm/centos
+: 1634639555:0;vagrant up
+: 1634639564:0;cd Documents/vm/centos
+: 1634765251:0;h -300|less
+: 1634765258:0;h -f -300|less
+: 1634962725:0;h
+: 1634962727:0;h -f 
+: 1634962791:0;tmux
+: 1634965617:0;h -f
+: 1635061761:0;cp ~/Downloads/è§£ç´ƒ¤ç­ƒ©çƒ´³åƒ¥¥æƒ»¸.xls .
+: 1635063723:0;eval "dd"
+: 1635063729:0;ls
+: 1635063768:0;eval echo '$PS1';ps --forest
+: 1635063777:0;tmux
+: 1635063783:0;echo '$PS1';ps --forest
+: 1635063786:0;eval echo '$PS1';ps --forest
+: 1635063825:0;cd Documents/vm/centos
+: 1635063828:0;vagrant up
+: 1635063843:0;cd Documents/vm/centos
+: 1635063849:0;vagrant ssh
+: 1635064167:0;cd ..
+: 1635064173:0;cd ~/LinuxSettings
+: 1635064176:0;git pull
+: 1635064183:0;ls
+: 1635064188:0;vi zshrc210130
+: 1635064261:0;git add .
+: 1635064266:0;git commit -m "dd"
+: 1635064277:0;git branch
+: 1635064286:0;git push -u origin master
+: 1635064295:0;cd ~
+: 1635064301:0;vi .zshrc
+: 1635064348:0;source .zshrc
+: 1635064356:0;calc "5*3"
+: 1635064420:0;awk 'BEGIN {print int(rand()*10)'
+: 1635064428:0;awk 'BEGIN {print int(rand()*10)}'
+: 1635064456:0;awk 'BEGIN {print int(rand()*10)+1}'
+: 1635064519:0;BEGIN {
+: 1635064571:0;ls -l /bin/
+: 1635064596:0;ls -l /bin/ |awk "$5 >=10000{print}"
+: 1635064608:0;ls -l /bin/ |awk "$5>=10000{print}"
+: 1635064618:0;ls -l /bin/ |awk '$5>=10000{print}'
+: 1635064623:0;ls -l /bin/ |awk '$5>=1000000{print}'
+: 1635064631:0;ls -l /bin/ |awk '$5>=100000000{print}'
+: 1635064634:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635064764:0;awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+: 1635064798:0;ls /etc/shells
+: 1635064809:0;cat /etc/shells
+: 1635064827:0;awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+: 1635064830:0;cat /etc/shells
+: 1635064934:0;ls -l /bin/ |awk '$5>=1000000{print}'
+: 1635064941:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065017:0;ls -l /bin/ |awk '$5>=10000000{print $9,$10}'
+: 1635065022:0;ls -l /bin/ |awk '$5>=1000000{print $9,$10}'
+: 1635065028:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065046:0;ls -l /bin/ |awk '$5>=10000000{print $8,$3}'
+: 1635065054:0;ls -l /bin/ |awk '$5>=100000{print $8,$3}'
+: 1635065059:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065068:0;ls -l /bin/ |awk '$5>=1000000{print $9}'
+: 1635065076:0;ls -l /bin/ |awk '$5>=1000000{print $9,$3}'
+: 1635065121:0;ls -l 
+: 1635065130:0;ls -l |sed 1d
+: 1635065164:0;ls -l |sed 1,2d
+: 1635065202:0;ls -l |sed /^mo/d
+: 1635065239:0;ls -l |sed /^to/d
+: 1635065243:0;ls -l |sed /^dr/d
+: 1635065278:0;ls -l |sed /$ey/d
+: 1635065302:0;ls -l |sed /ey$/d
+: 1635065311:0;ls -l |sed /py$/d
+: 1635065358:0;ls -l |sed -n 2,4p
+: 1635065380:0;ls -l
+: 1635065412:0;ls -l |sed 1,2d
+: 1635065426:0;ls -l |sed -n 2,4p
+: 1635065431:0;ls -l
+: 1635065580:0;cd ..
+: 1635065594:0;cd ma/Documents
+: 1635065595:0;ls
+: 1635065613:0;git clone git@github.com:ducksfrogs/learn_awk_sed.git
+: 1635065621:0;cd learn_awk_sed
+: 1635065636:0;vi ~/.zsh_history

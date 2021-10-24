@@ -1,0 +1,40 @@
+: 1633024944:0;mkdir awk_sed
+: 1633024946:0;cd awk_sed
+: 1633025018:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git
+: 1633025073:0;echo "# learn_awk and sed" > README.md
+: 1633025116:0;git remote git@github.com:ducksfrogs/learn_awk_sed.git\
+: 1633025134:0;git remote origin git@github.com:ducksfrogs/learn_awk_sed.git\
+: 1633025151:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git\
+: 1633025173:0;mkdir awk
+: 1633025189:0;vi first.awk
+: 1633025347:0;awk '{print $0}' test.txt
+: 1633025355:0;awk '{print $1}' test.txt
+: 1633026515:0;cd awk
+: 1633026562:0;awk '{print $1*10}' num.txt
+: 1633027548:0;git commit -m "awk first"
+: 1633027584:0;cat ~/.zsh_history |grep awk >> hits_commands
+: 1633820732:0;mv awk_sed misc
+: 1635064420:0;awk 'BEGIN {print int(rand()*10)'
+: 1635064428:0;awk 'BEGIN {print int(rand()*10)}'
+: 1635064456:0;awk 'BEGIN {print int(rand()*10)+1}'
+: 1635064596:0;ls -l /bin/ |awk "$5 >=10000{print}"
+: 1635064608:0;ls -l /bin/ |awk "$5>=10000{print}"
+: 1635064618:0;ls -l /bin/ |awk '$5>=10000{print}'
+: 1635064623:0;ls -l /bin/ |awk '$5>=1000000{print}'
+: 1635064631:0;ls -l /bin/ |awk '$5>=100000000{print}'
+: 1635064634:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635064764:0;awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+: 1635064827:0;awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+: 1635064934:0;ls -l /bin/ |awk '$5>=1000000{print}'
+: 1635064941:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065017:0;ls -l /bin/ |awk '$5>=10000000{print $9,$10}'
+: 1635065022:0;ls -l /bin/ |awk '$5>=1000000{print $9,$10}'
+: 1635065028:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065046:0;ls -l /bin/ |awk '$5>=10000000{print $8,$3}'
+: 1635065054:0;ls -l /bin/ |awk '$5>=100000{print $8,$3}'
+: 1635065059:0;ls -l /bin/ |awk '$5>=10000000{print}'
+: 1635065068:0;ls -l /bin/ |awk '$5>=1000000{print $9}'
+: 1635065076:0;ls -l /bin/ |awk '$5>=1000000{print $9,$3}'
+: 1635065613:0;git clone git@github.com:ducksfrogs/learn_awk_sed.git
+: 1635065621:0;cd learn_awk_sed
+: 1635065771:0;cat ~/.zsh_history|grep "awk" >211024.awkM
