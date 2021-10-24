@@ -1,0 +1,38 @@
+echo 'Dwin ds is the assintand reage manager.' >manager.txt
+cd ~/Documents
+ls
+git clone git@github.com:ducksfrogs/learn_awk_sed.git
+cd learn_awk_sed
+cd sed
+echo 'Dwin ds is the assintand reage manager.' >manager.txt
+cat manager.txt
+sed 's/^D/momo/' manager.txt
+sed 's/^r/momo/' manager.txt
+sed 's/r*/momo/' manager.txt
+sed 's/reage/momo/' manager.txt
+echo 'I love my wife' >love.txt
+cat love.txt
+sed /
+sed 's/wife/sed/'
+sed 's/wife/sed/' love.txt
+sed 's/WIFE/sed/' love.txt
+sed 's/WIFE/sed/i' love.txt
+sed 's/WIFE/sed/I' love.txt
+echo 'This is line2. '>>love.txt
+echo 'This is line3. '>>love.txt
+sed 's/WIFE/sed/i' love.txt
+sed 's/this/that/i' love.txt
+echo 1 2 3 4 |awk '{print $1}'
+echo 1 2 3 4 |awk '{print $2}'
+echo 1 2 3 4 |awk '{print $0}'
+echo 1:2:3:4 |awk -F'[:]' '{print $0}'
+echo 1:2:3:4 |awk -F'[:]' '{print $1}'
+echo 1:2:3:4 |awk -F'[:]' '{print $2}'
+echo 1:2/3:4 |awk -F'[:]' '{print $2}'
+echo 1:2/3:4 |awk -F'[:/]' '{print $2}'
+echo 1:2/3:4 |awk -F'[:/]' '{print $3}'
+ls
+echo ~/.zsh_history >> awk211024
+echo ~/.zsh_history > awk211024
+vi awk211024
+cat ~/.zsh_history >> awk211024
