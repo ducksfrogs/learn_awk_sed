@@ -1,0 +1,25 @@
+awk '{print $0}' test.txt
+awk '{print $1}' test.txt
+awk '{print $1*10}' num.txt
+cat ~/.zsh_history |grep awk >> hits_commands
+awk 'BEGIN {print int(rand()*10)'
+awk 'BEGIN {print int(rand()*10)}'
+awk 'BEGIN {print int(rand()*10)+1}'
+ls -l /bin/ |awk "$5 >=10000{print}"
+ls -l /bin/ |awk "$5>=10000{print}"
+ls -l /bin/ |awk '$5>=10000{print}'
+ls -l /bin/ |awk '$5>=1000000{print}'
+ls -l /bin/ |awk '$5>=100000000{print}'
+ls -l /bin/ |awk '$5>=10000000{print}'
+awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+awk 'BEGIN{i=0}{print ++i,$0}END{print "(" i "gyo)"}' /etc/shells
+ls -l /bin/ |awk '$5>=1000000{print}'
+ls -l /bin/ |awk '$5>=10000000{print}'
+ls -l /bin/ |awk '$5>=10000000{print $9,$10}'
+ls -l /bin/ |awk '$5>=1000000{print $9,$10}'
+ls -l /bin/ |awk '$5>=10000000{print}'
+ls -l /bin/ |awk '$5>=10000000{print $8,$3}'
+ls -l /bin/ |awk '$5>=100000{print $8,$3}'
+ls -l /bin/ |awk '$5>=10000000{print}'
+ls -l /bin/ |awk '$5>=1000000{print $9}'
+ls -l /bin/ |awk '$5>=1000000{print $9,$3}'
