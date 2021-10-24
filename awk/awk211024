@@ -1,0 +1,6 @@
+echo 1:2/3:4 |awk -F'[:/]'-v 'OFS=#' '{print $1,4}'
+echo 1:2/3:4 |awk -F'[:/]'-v 'OFS=#' '{print $1,$4}'
+echo 1:2/3:4 |awk -F'[:/]' -v 'OFS=#' '{print $1,$4}'
+echo 1:2/3:4 |awk -F'[:/]' -v 'OFS=#' '{print $0}'
+echo 1:2/3:4 |awk -F'[:/]' -v 'OFS=#' '{print $1,2}'
+echo 1:2/3:4 |awk -F'[:/]' -v 'OFS=#' '{print $1,2,3}'
