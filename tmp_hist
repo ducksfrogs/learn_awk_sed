@@ -1,0 +1,414 @@
+: 1632061321:0;sudo apt upadte
+: 1632028999:0;git clone https://github.com/ducksfrogs/LinuxSettings.git
+: 1632029045:0;unzip LinuxSettings
+: 1632029053:0;unzip LinuxSettings-master.zip
+: 1632029058:0;cd LinuxSettings-master
+: 1632029067:0;./nvidia.sh
+: 1632037839:0;sudo apt install brasero
+: 1632037994:0;sudo apt autoclean
+: 1632041136:0;df
+: 1632822935:0;git 
+: 1632823083:0;zp zshrc210130 ~
+: 1632823089:0;cp zshrc210130 ~/
+: 1632823114:0;mv zshrc210130 ~/.zshrc
+: 1632823122:0;conda 
+: 1632823279:0;history -1000|grep nvi
+: 1632823299:0;cd Downloads/LinuxSettings
+: 1632823302:0;cd ubuntu_settings
+: 1632823309:0;less nvidia.sh
+: 1632823455:0;cd ~
+: 1632823461:0;less .tmux.conf
+: 1632823507:0;sudo ubuntu-drivers autoinstall
+: 1632823560:0;ubuntu-drivers devices
+: 1632823595:0;sudo apt install nvidia-driver-470
+: 1632824123:0;mkdir .bin
+: 1632824216:0;chmod +x Anaconda3-2021.05-Linux-x86_64.sh
+: 1632824223:0;./Anaconda3-2021.05-Linux-x86_64.sh
+: 1632832384:0;h -f -100 |grep ssh
+: 1632832418:0;ssh-keygen -t rsa -b 4096 -C "ma_yamaki@yahoo.com"
+: 1632832434:0;eval "@
+: 1632832526:0;ssh-keygen -t ed25519 -C "ma_yamaki@yahoo.com"
+: 1632832539:0;eval "$(ssh-agent -s)"
+: 1632832567:0;ssh-add -K ~/.ssh/id_ed25519
+: 1632832711:0;cat ~/.ssh/id_ed25519.pub |xsel -bi
+: 1632832794:0;./mozc.sh
+: 1632833261:0;cp momo.sh vagrant.sh
+: 1632833290:0;pip install neovim
+: 1632833351:0;sudo apt install neovim
+: 1632833374:0;vi vagrant.sh
+: 1632833406:0;./vagrant.sh
+: 1632833431:0;cp -rf nvim ~/.config
+: 1632833437:0;./dein_f.sh
+: 1632833464:0;nvim
+: 1632833519:0;cd misc
+: 1632833545:0;find ~/ -name "git_co*"
+: 1632833558:0;./git_conf.sh
+: 1632833563:0;git commit -m "add vagrant "
+: 1632833642:0;cd ~/Documents
+: 1632833653:0;mkdir -p vm/centos
+: 1632833656:0;cd vm/centos
+: 1632833659:0;vagrant init
+: 1632833665:0;vi Vagrantfile
+: 1632833703:0;sudo dpkg -i virtualbox-6.1_6.1.26-145957\~Ubuntu\~eoan_amd64.deb
+: 1632833924:0;sudo reboot
+: 1632834010:0;sudo dpkg -r virtualbox-6.1
+: 1632834035:0;sudo apt install virtualbox
+: 1632863156:0;vi
+: 1632863193:0;mkdir py/django -p
+: 1632863196:0;cd py/django
+: 1632863392:0;git clone git@github.com:ducksfrogs/django_2.git
+: 1632863405:0;cd Downloads
+: 1632863490:0;cd ~/Documents/vm/centos
+: 1632863569:0;sudo dpkg -i atom-amd64.deb
+: 1632864606:0;sudo add-apt-repository multiverse
+: 1632864642:0;sudo apt install ubuntu-restricted-extras
+: 1632948231:0;cd LinuxSettings
+: 1632950312:0;cd editors
+: 1632950316:0;cat installer.sh
+: 1632950362:0;rm -rf installer.sh
+: 1632950369:0;cd ../ubuntu_settings
+: 1632950389:0;rm -rf .nvimlog
+: 1632950396:0;ls -la
+: 1632950415:0;rm -rf momo.sh
+: 1632950426:0;rm -rf neovim.sh
+: 1632950438:0;rm -r r4forcal.sh
+: 1632950454:0;git commit -m "remove some"
+: 1632950759:0;less postgres.sh
+: 1632950916:0;git commit -m "Postgres"
+: 1633001001:0;h -f -80|less
+: 1633001031:0;h	
+: 1633001039:0;h -f -80|less |grep sudo
+: 1633002081:0;ssh ma@masan-s.com
+: 1633004196:0;sudo shutdown -h now
+: 1633024944:0;mkdir awk_sed
+: 1633024946:0;cd awk_sed
+: 1633025018:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git
+: 1633025073:0;echo "# learn_awk and sed" > README.md
+: 1633025094:0;git commit -m "First commit "
+: 1633025116:0;git remote git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025134:0;git remote origin git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025151:0;git remote add origin git@github.com:ducksfrogs/learn_awk_sed.git\
+
+: 1633025173:0;mkdir awk
+: 1633025189:0;vi first.awk
+: 1633025210:0;touch test.txt
+: 1633025347:0;awk '{print $0}' test.txt
+: 1633025355:0;awk '{print $1}' test.txt
+: 1633025367:0;vi test.txt
+: 1633025406:0;vi num.txt
+: 1633025457:0;git commit -m "add mu"
+: 1633026515:0;cd awk
+: 1633026562:0;awk '{print $1*10}' num.txt
+: 1633026569:0;cat num.txt
+: 1633026654:0;cat /etc/shells
+: 1633026871:0;bash
+: 1633027377:0;touch hits_commands
+: 1633027401:0;cat ~/.zsh_history >> hits_commands
+: 1633027548:0;git commit -m "awk first"
+: 1633027584:0;cat ~/.zsh_history |grep awk >> hits_commands
+: 1633027587:0;vi hits_commands
+: 1633028804:0;sudo shutdown -h +1
+: 1633429899:0;sudo apt upgrade
+: 1633738026:0;conda info -e
+: 1633738115:0;python --version
+: 1633738137:0;conda create -n work python=3.8 
+: 1633739036:0;source activate work
+: 1633739040:0;cd Documents
+: 1633739049:0;cd py
+: 1633739072:0;git clone git@github.com:ducksfrogs/s_test.git
+: 1633739099:0;git checkout start_flask
+: 1633739153:0;python -m django --version
+: 1633739165:0;pip install flask
+: 1633739625:0;cd ~/Downloads
+: 1633739635:0;sudo dpkg -i code_1.61.0-1633631387_amd64.deb
+: 1633739660:0;sudo apt -f install
+: 1633739737:0;vim
+: 1633741241:0;cd ~/Documents/py/s_test/flask/base
+: 1633741251:0;python tu_ai_ac.py
+: 1633753296:0;h -f -
+: 1633753305:0;h -f -1000|less
+: 1633774392:0;vagrant up
+: 1633774399:0;cd dk
+: 1633774406:0;cd Documents/vm/centos
+: 1633774410:0;vagrant ssh
+: 1633774605:0;cd Documents/py
+: 1633774609:0;cd s_test
+: 1633774632:0;git push origin start_flask
+: 1633774658:0;git merge start_flask
+: 1633774676:0;git pull
+: 1633774718:0;git checkout -b flask_2day
+: 1633774751:0;cd flask
+: 1633774756:0;cd 1st
+: 1633774849:0;mkdir first_db/models
+: 1633774858:0;mv database.py first_db/models
+: 1633774865:0;mv __init__.py first_db/models
+: 1633774872:0;mv models.py first_db/models
+: 1633774918:0;conda install sqlalchemy
+: 1633775521:0;pip install sqlalchemy
+: 1633775900:0;cd first_db
+: 1633775907:0;python
+: 1633776266:0;cd ~/Documents/py/s_test/flask/1st/first_db
+: 1633776267:0;;s
+: 1633776273:0;cd models
+: 1633776281:0;sqlite3 onegai.db
+: 1633777035:0;cd flask/1st/first_db
+: 1633777267:0;git commit -m "fin db\
+"
+: 1633777288:0;git push origin flask_2day
+: 1633777437:0;git checkout main
+: 1633777444:0;git merge flask_2day
+: 1633778357:0;python run.py
+: 1633778664:0;h -f
+: 1633778670:0;h -f -100|less
+: 1633802152:0;cd Documents/py/s_test
+: 1633804968:0;h
+: 1633805551:0;h -f -19999|less
+: 1633816918:0;systemctl status postgresql
+: 1633817104:0;psql -Upostgres -p
+: 1633817116:0;psql -Upostgres 
+: 1633817165:0;tmux
+: 1633817174:0;sudo passwd postgres
+: 1633817200:0;h -1000|grep postgres
+: 1633817207:0;h -f -1000|grep postgres
+: 1633817220:0;sudo -u postgres -i
+: 1633817410:0;sudo su -
+: 1633817603:0;vi postgres.sh
+: 1633817635:0;./postgres.sh
+: 1633817749:0;sudo apt update
+: 1633817783:0;sudo apt install pgadmin4
+: 1633817799:0;psql -Uposg
+: 1633817810:0;psql -Upostgres
+: 1633818623:0;rm -rf LinuxSettings
+: 1633818635:0;sudo apt install xsel
+: 1633818644:0;vi .tmux.conf
+: 1633818781:0;git clone git@github.com:ducksfrogs/LinuxSettings.git
+: 1633818791:0;cd LinuxSettings/ubuntu_settings
+: 1633818795:0;vi first.sh
+: 1633818836:0;cd ..
+: 1633818840:0;git status
+: 1633818855:0;git commit -m "xsel"
+: 1633818862:0;git push origin master
+: 1633818994:0;psql -Upostgres -d test
+: 1633820346:0;sudo systemctl restart postgresql
+: 1633820630:0;psql -Utest -d test
+: 1633820717:0;cd Documents/
+: 1633820723:0;mkdir sql
+: 1633820728:0;mkdir misc
+: 1633820732:0;mv awk_sed misc
+: 1633820738:0;mv sql misc
+: 1633820742:0;cd misc/sql
+: 1633820767:0;echo "Start lesson SQL" >> README.md
+: 1633820795:0;echo "Start lesson SQL" > README.md
+: 1633820812:0;git init
+: 1633820818:0;git add README.md
+: 1633820830:0;git commit -m "first commit "
+: 1633820845:0;git branch -M main
+: 1633820852:0;git remote add origin git@github.com:ducksfrogs/lesson_sql.git
+: 1633820859:0;git push -u origin main
+: 1633820887:0;ls
+: 1633822501:0;git add .
+: 1633822505:0;git commit -m "d"
+: 1633822510:0;git push origin main
+: 1633822657:0;exit
+: 1633822662:0;psql -Utest -d test
+: 1633837813:0;tmux
+: 1633837816:0;h -f
+: 1633837838:0;psql -Upostgres -d test
+: 1633839801:0;sudo apt install libreoffice
+: 1633840323:0;cd Documents
+: 1633840326:0;ls
+: 1633840330:0;vi deniro.csv
+: 1633840905:0;ls
+: 1633840909:0;cat sqltest
+: 1633841477:0;cat sqltest|xsel -bi
+: 1633841541:0;vi sqltest
+: 1633841691:0;cat sqltest|xsel -bi
+: 1633841809:0;ls
+: 1633841811:0;vi homes.csv
+: 1633842114:0;cat homes.csv|xsel -bi
+: 1633843366:0;vi homes.csv
+: 1633843453:0;cat homes.csv|xsel -bi
+: 1633843933:0;vi Untitled\ 1.csv
+: 1633844091:0;cat Untitled\ 1.csv
+: 1633844106:0;cat Untitled\ 1.csv |xsel -bi
+: 1633845765:0;cd misc/sql
+: 1633845766:0;ls
+: 1633845769:0;git status
+: 1633845772:0;git add .
+: 1633845778:0;git commit -m "d'"
+: 1633845783:0;git push origin main
+: 1633847820:0;h
+: 1633847826:0;h -f -100|less
+: 1633847884:0;tmux
+: 1633847893:0;cd Documents/py/s_test
+: 1633847896:0;git pull
+: 1633848149:0;cd flask/1st/first_db
+: 1633848151:0;ls
+: 1633848156:0;python run.py
+: 1633848329:0;sqlite3
+: 1633848351:0;cd Documents/py/s_test/flask/1st/first_db
+: 1633848352:0;ls
+: 1633848356:0;cd models
+: 1633848357:0;ls
+: 1633848363:0;sqlite3 onegai.db
+: 1633849160:0;cd ..
+: 1633849165:0;git status
+: 1633849168:0;git add .
+: 1633849172:0;git commit -m "d"
+: 1633849180:0;git branch
+: 1633849187:0;cd ..
+: 1633849199:0;git checkout flask3day
+: 1633849207:0;git checkout -b flask3day
+: 1633849261:0;conda info -e
+: 1633849282:0;ls
+: 1633849286:0;cd ..
+: 1633849287:0;ls
+: 1633849290:0;cd first_db
+: 1633849291:0;ls
+: 1633849294:0;cd ..
+: 1633849296:0;cd..
+: 1633849298:0;cd ..
+: 1633849298:0;ls
+: 1633849305:0;cd 1st_pg
+: 1633849312:0;source activate work
+: 1633849324:0;pip install psycopg2
+: 1633849383:0;pip install psycopg2-binary
+: 1633849436:0;cd .bin/anaconda3/envs/work/include/python3.8
+: 1633849437:0;ls
+: 1633850368:0;pip install sqlalchemy
+: 1633850402:0;jupyter 
+: 1633850410:0;jupyter-lab
+: 1633850780:0;cd ~
+: 1633850781:0;tmux
+: 1633850792:0;cd Documents/py/s_test
+: 1633850798:0;cd flask/1st_pg
+: 1633850805:0;source activate work
+: 1633850822:0;conda install psycopg2
+: 1633850860:0;jupyter-lab
+: 1633850920:0;conda deactivate
+: 1633850925:0;conda install psycopg2
+: 1633851362:0;ls
+: 1633851368:0;jupyter-lab
+: 1633851423:0;conda install psycopg2-binary
+: 1633851455:0;jupyter-lab
+: 1633851485:0;node -v
+: 1633851493:0;nvm
+: 1633851504:0;cd LinuxSettings/ubuntu_settings
+: 1633851504:0;ls
+: 1633851509:0;./nvm_rvm.sh
+: 1633851597:0;nvm install stable
+: 1633851621:0;conda install psycopg2
+: 1633851638:0;tmux
+: 1633851642:0;node -v
+: 1633851652:0;nvm alias default stable
+: 1633851668:0;source activate work
+: 1633851678:0;cd Documents/py/s_test/flask/1st_pg
+: 1633851679:0;ls
+: 1633851686:0;jupyter-lab
+: 1633851857:0;conda create -n py39 python=3.9 anaconda
+: 1633852001:0;conda deactivate
+: 1633852187:0;source activate py39
+: 1633852203:0;h -100|grep psy
+: 1633852216:0;pip install psycopg2
+: 1633852279:0;sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+: 1633852299:0;pip install psycopg2
+: 1633852313:0;sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+: 1633852359:0;sudo apt install python-wheel-common
+: 1633852390:0;pip install psycopg2
+: 1633852462:0;sudo apt-get install python-dev libpq-dev
+: 1633852507:0;pip install psycopg2
+: 1633852551:0;pip install sqlalchemy
+: 1633852561:0;cd Documents/py/s_test/flask
+: 1633852562:0;ls
+: 1633852576:0;cd 1st_pg
+: 1633852576:0;ls
+: 1633852579:0;jupyter-lab
+: 1633854987:0;conda install psycopg2
+: 1636265161:0;h -f
+: 1636265264:0;sudo apt install librecad
+: 1636309892:0;sudo apt autoremove
+: 1636281881:0;h -f
+: 1636284658:0;tmux
+: 1636284661:0;cd Documents
+: 1636284662:0;ls
+: 1636284667:0;git clone git@github.com:ducksfrogs/learn_awk_sed.git
+: 1636319501:0;cd Documents/vm/centos
+: 1636319503:0;vagrant up
+: 1636319563:0;vagrant ssh
+: 1636320227:0;less Vagrantfile
+: 1636320243:0;vi Vagrantfile
+: 1636320276:0;vagrant reload
+: 1636320472:0;psql -Upostgres -h192.168.33.10 
+: 1636320669:0;ls
+: 1636320671:0;cd ~
+: 1636320678:0;sudo apt update
+: 1636320800:0;sudo apt upgrade -y
+: 1636321930:0;A\
+d
+: 1636321934:0;h
+: 1636321953:0;sudo apt upgrade -y
+: 1636367216:0;h
+: 1636367227:0;hcd Documents/learn_awk_sed
+: 1636367232:0;cd Documents/learn_awk_sed
+: 1636367233:0;ls
+: 1636367332:0;cd ~
+: 1636367334:0;tmux
+: 1636367335:0;h
+: 1636367339:0;cd Documents/learn_awk_sed
+: 1636371458:0;h
+: 1636372505:0;type -a cut
+: 1636372511:0;man cut
+: 1636372602:0;cat /etc/passwd
+: 1636372628:0;cut -c 1 /etc/passwd
+: 1636372651:0;cut -c 7 /etc/passwd
+: 1636372673:0;cut -c 1-8 /etc/passwd
+: 1636372682:0;cut -c 4-7 /etc/passwd
+: 1636372685:0;cut -c 1-8 /etc/passwd
+: 1636372709:0;cut -c 4- /etc/passwd
+: 1636372723:0;cut -c -5 /etc/passwd
+: 1636372756:0;cut -c 1,3,5 /etc/passwd
+: 1636372770:0;cut -c 5,3,1 /etc/passwd
+: 1636372788:0;cut -c 999 /etc/passwd
+: 1636372815:0;cut -b 1 /etc/passwd
+: 1636372852:0;echo "nu"
+: 1636372869:0;echo "nu" |cut -c 1
+: 1636372874:0;echo "nu" |cut -b 1
+: 1636372896:0;echo "も" |cut -b 1
+: 1636372901:0;echo "も" |cut -c 1
+: 1636372962:0;echo -e 'one\ttow\tthere' |cut -f 1
+: 1636372965:0;echo -e 'one\ttow\tthere' |cut -f 2
+: 1636372970:0;echo -e 'one\ttow\tthere' |cut -f 3
+: 1636372997:0;echo 'one,tow,there' |cut -f 3
+: 1636373012:0;echo 'one,tow,there' |cut -d ',' -f 1
+: 1636373014:0;echo 'one,tow,there' |cut -d ',' -f 2
+: 1636373018:0;echo 'one,tow,there' |cut -d ',' 1
+: 1636373024:0;echo 'one,tow,there' |cut -d ',' -f 3
+: 1636373102:0;echo 'one\two\three' |cut -d '\' -f 2
+: 1636373113:0;echo 'one\two\three' |cut -d '\' -f 1
+: 1636373192:0;cat /etc/passwd
+: 1636373210:0;cut -d ':' -f 1:4 /etc/passwd
+: 1636373247:0;cut -d ':' -f 1 /etc/passwd
+: 1636373254:0;cut -d ':' -f 1-4 /etc/passwd
+: 1636373266:0;cut -d ':' -f 1,3 /etc/passwd
+: 1636373289:0;cut -d ':' -f 1,3 --output-delimiter=',' /etc/passwd 
+: 1636373336:0;echo 'frist,last' > people.csv
+: 1636373359:0;echo 'Johe,Smith' >> people.csv
+: 1636373375:0;echo 'fistly,mclasty' >> people.csv
+: 1636373394:0;echo 'Mr. firstly, mclastry' >> people.csv
+: 1636373398:0;cat people.csv
+: 1636373415:0;cut -d ',' -f 1 people.csv
+: 1636373446:0;cat ~/.zsh_history >tmp_hist
+: 1636373448:0;vi tmp_hist
+: 1636373479:0;rm tmp_hist
+: 1636373499:0;grep '^first' people.csv
+: 1636373528:0;grep 'first,last' people.csv
+: 1636373553:0;echo 'first,mclasty' >> people.csv
+: 1636373562:0;echo 'last,mclasty' >> people.csv
+: 1636373569:0;echo 'last,first' >> people.csv
+: 1636373572:0;grep 'first,last' people.csv
+: 1636373580:0;grep 'first' people.csv
+: 1636373589:0;grep '^first' people.csv
+: 1636373633:0;grep 't$' people.csv
+: 1636373660:0;cat ~/.zsh_history >tmp_hist
