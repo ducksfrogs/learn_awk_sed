@@ -7,3 +7,24 @@ echo 1:2/3:4 |awk -F'[:]' -v 'RS=/' '{print $1}'
 echo 1:2/3:4 |awk -F'[:]' -v 'RS=/' '{print $1,$2}'
 echo 1:2/3:4 |awk -F'[:/]' '{print $NF}'
 echo 1:2/3:4 |awk -F'[:/]' '{print $NF-1}'
+: 1635581451:0;echo |awk -f hello.awk
+: 1635581533:0;ls -l
+: 1635581574:0;ls -l |awk '$9==hello.awk'  '{print $3,$4,$9}'
+: 1635581607:0;ls -l |awk '$9=="hello.awk" {print $3,$4,$9}'
+: 1635581625:0;cat /etc/passwd
+: 1635581664:0;cat /etc/passwd |awk -F: '{print $1,$6}'
+: 1635581675:0;cat /etc/passwd
+: 1635581703:0;cat /etc/passwd |awk -F: '{print $1,$6}'
+: 1635581801:0;h
+: 1635581811:0;echo |awk -f hello.awk
+: 1635581824:0;tail ~/.zhistory >> 1030akk.hist
+: 1635581811:0;echo |awk -f hello.awk
+: 1635581824:0;tail ~/.zhistory >> 1030akk.hist
+: 1635581874:0;vi sampe.awk
+: 1635581920:0;chmod 755 sampe.awk
+: 1635581925:0;ps -ef
+: 1635581943:0;ps -ef |asadmin sampe.awk
+: 1635581957:0;vi sampe.awk
+: 1635581983:0;ps -ef |./sampe.awk
+: 1635581993:0;ps -ef
+: 1635582085:0;tail ~/.zhistory >> 1030akk.hist
